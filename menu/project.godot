@@ -11,5 +11,6 @@ config_version=5
 [application]
 
 config/name="Menu"
+run/main_scene="uid://dy8ea0fe20exq"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"

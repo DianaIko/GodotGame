@@ -1,4 +1,6 @@
-[gd_scene format=3 uid="uid://dy8ea0fe20exq"]
+[gd_scene load_steps=2 format=3 uid="uid://dy8ea0fe20exq"]
+
+[ext_resource type="Script" uid="uid://hdpqgwq5a3sh" path="res://start_screen.gd" id="1_ncxyx"]
 
 [node name="StartScreen" type="Control"]
 layout_mode = 3
@@ -7,3 +9,13 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_ncxyx")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 564.0
+offset_top = 325.0
+offset_right = 782.0
+offset_bottom = 479.0
+
+[connection signal="button_down" from="Button" to="." method="_on_button_button_down"]
